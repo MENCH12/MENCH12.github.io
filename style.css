@@ -1,0 +1,134 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, html { font-family: 'Roboto', sans-serif; height: 100%; margin: 0; font-family: Arial, sans-serif; background-color: #00585E;}
+.header { background: url('') no-repeat center; position: relative; height: 50vh; background-color: #00585E; color: white; text-align: center;  padding-bottom: 20px; }
+.header img { max-height: 200px; border-radius: 50%; padding-top: 50px;  margin-bottom: 20px;}
+.header h1 { font-size: 2.5rem; /* Increase font size */
+    font-weight: 700; /* Make it bold */margin: 0; }
+.section { padding: 40px; /* More padding for spacious look */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */opacity: 0; transition: opacity 2s; padding: 20px;  background-color: #fff;}
+.section.visible { opacity: 1; }
+#about-me { max-width: 600px; 
+    margin: 20px auto; 
+    text-align: center; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #f7f7f7; 
+    background-color: #f7f7f7; }
+#work-samples, #testimonials, #external-links { background-color: #333; }
+.footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+.navbar {
+    background-color:#00585E; /* Or any color of your choice */
+    overflow: hidden;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* This makes the list horizontal */
+    justify-content: center; /* Centers the menu items */
+}
+.nav-item {
+    margin: 0 10px; /* Adjust spacing between items */
+}
+.nav-item a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px; /* Adjust padding */
+    text-decoration: none;
+}
+/* Change color on hover */
+.nav-item a:hover, a:hover {
+    background-color: #009688; /* Your accent color */
+    color: white; /* Contrast color */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    /* existing styles */
+    .nav-list {
+        flex-direction: column;
+    }
+}
+.contact-section {
+    text-align: center;
+    padding: 20px;
+}
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+.contact-section a {
+    margin: 0 10px;
+    display: inline-block;
+}
+.contact-section img {
+    width: 40px;
+    height: 40px;
+}
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+a, .btn {
+    background: linear-gradient(45deg, #009688, #00585E);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+a:hover, .btn:hover {
+    background: linear-gradient(45deg, #00585E, #009688);
+    transform: translateY(-2px);
+}
+.project {
+    text-align: center; /* Centers content within the container */
+    margin-bottom: 40px; /* Spacing between projects */
+}
+.project img {
+    max-width: 75%; /* Responsive image sizing */
+    height: auto;
+    margin-bottom: 20px; /* Spacing between image and text */
+}
+.project-description {
+    background-color: #333; /* Light background for text */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds depth */
+}
+.project-description h3 {
+    margin-top: 0;
+    color: #f8f8f8;
+}
+.project-description p {
+    font-size: 1rem; /* Adjust as needed */
+    line-height: 1.5; /* Improves readability */
+}
+.project {
+    max-width: 80%; /* Increasing the max width */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Adding some padding */
+    color: #f8f8f8; /* Change text color for visibility */
+    background-color: #f8f8f8; /* Light background for text containers */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds depth */
+}
+.about-me {
+    max-width: 80%; /* Increasing the max width */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Adding some padding */
+    color: #333; /* Change text color for visibility */
+    background-color: #f8f8f8; /* Light background for text containers */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds depth */
+}
